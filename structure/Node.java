@@ -6,21 +6,20 @@ public class Node<T> {
         this.element = element;
         this.next = null;
     }
-    
-    public void setElement(T element) {
-        this.element = element;
-    }
 
     public T getElement() {
         return this.element;
     }
 
-    public void setNext(Node<T> next) {
-        this.next = next;
+    public void setElement(T element) {
+        this.element = element;
     }
-    
-    @SuppressWarnings("unchecked")
+
     public Node<T> getNext() {
         return this.next;
+    }
+
+    public void setNext(Node<T> next) {
+        this.next = next;
     }
 }
