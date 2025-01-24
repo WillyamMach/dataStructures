@@ -9,7 +9,7 @@ public class ListTest {
         while(!list.isEmpty()) {
             int el = list.pop();
             System.out.println("Element removed: " + el);
-        }
+        } 
         
         list.listAllNodes();
     }

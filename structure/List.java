@@ -23,7 +23,7 @@ public class List<T> {
 
     public T pop() {
         if (this.node == null) {
-            System.out.println('List is empty');
+            System.out.println("List is empty");
         }
 
         T element = this.node.getElement();
