@@ -1,3 +1,9 @@
+/**
+ * A classe DinamicQueue representa uma fila dinâmica genérica.
+ * 
+ * @param <T> o tipo de elementos mantidos nesta fila
+ */
+
 public class DinamicQueue<T> {
     private Node<T> start;
     private Node<T> end;
@@ -25,7 +31,7 @@ public class DinamicQueue<T> {
             System.out.println("Nothing to see here");
             return;
         }
-        
+            
         this.start = this.start.getNext();
 
         if (this.start == null) {

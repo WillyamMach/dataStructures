@@ -1,3 +1,9 @@
+/**
+ * A classe DinamicStack representa uma pilha dinâmica genérica.
+ *
+ * @param <T> o tipo de elementos armazenados na pilha
+ */
+
 public class DinamicStack<T> {
     private Node<T> head;
 
