@@ -11,10 +11,8 @@ public class DinamicStack<T> {
         this.head = newNode;
     }
 
-    public T pop() {
-        T element = this.head.getElement();
+    public void pop() {
         this.head = this.head.getNext();
-        return element;
     }
 
     public boolean isEmpty() {
