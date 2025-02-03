@@ -30,7 +30,7 @@ public class Stack<T> {
         return (this.top == -1);
     }
     
-    public void showValues() {
+    public void listAllValues() {
         System.out.println(Arrays.toString(this.values));
     }
 }

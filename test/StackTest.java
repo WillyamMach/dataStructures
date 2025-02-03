@@ -8,12 +8,12 @@ public class StackTest {
             i++;
         }
         
-        stack.showValues();
+        stack.listAllValues();
         
         while(!stack.isEmpty()) {
             stack.pop();
         }
         
-        stack.showValues();
+        stack.listAllValues();
     }
 }
