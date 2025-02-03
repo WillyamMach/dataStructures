@@ -37,7 +37,6 @@ public class List<T> {
         }
 
         Node<T> aux = this.head;
-
         while(aux != null) {
             System.out.println(aux.getElement());
             aux = aux.getNext();
