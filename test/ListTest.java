@@ -6,11 +6,9 @@ public class ListTest {
         list.append(2);
         list.append(1);
         
-        while(!list.isEmpty()) {
-            int el = list.pop();
-            System.out.println("Element removed: " + el);
-        } 
+        list.pop();
+        list.pop();
         
-        list.listAllNodes();
+        list.listAllValues();
     }
 }

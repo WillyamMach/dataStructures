@@ -1,49 +1,45 @@
 public class List<T> {
-    private Node<T> node;
+    private Node<T> head;
 
     public List() {
-        this.node = null;
+        this.head = null;
     }
-
+    
     public void append(T element) {
         Node<T> newNode = new Node<>(element);
-
-        if (this.node == null) {
-            this.node = newNode;
+        
+        if(isEmpty()) {
+            this.head = newNode;
             return;
         }
-
-        Node<T> aux = this.node;
-        while (aux.getNext() != null) {
+        
+        Node<T> aux = this.head;
+        
+        while(aux.getNext() != null) {
             aux = aux.getNext();
         }
-
+        
         aux.setNext(newNode);
     }
-
-    public T pop() {
-        if (this.node == null) {
-            System.out.println("List is empty");
-        }
-
-        T element = this.node.getElement();
-        this.node = this.node.getNext();
-        return element;
+    
+    public void pop() {
+        this.head = this.head.getNext();
     }
-
+    
     public boolean isEmpty() {
-        return this.node == null;
+        return this.head == null;
     }
 
-    public void listAllNodes() {
-        if (this.node == null) {
-            System.out.println("Nothing to show here");
+    public void listAllValues() {
+        if(this.isEmpty()) {
+            System.out.println("Lista vazia");
             return;
         }
 
-        Node<T> aux = this.node;
-        while (aux != null) {
-            System.out.println("El => " + aux.getElement());
+        Node<T> aux = this.head;
+
+        while(aux != null) {
+            System.out.println(aux.getElement());
             aux = aux.getNext();
         }
     }
