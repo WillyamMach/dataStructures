@@ -31,8 +31,8 @@ public class DecimalToBinary {
     public static void convertToBinary(int userEntry) {
         while(userEntry != 0) {
             int binaryValue = userEntry % 2;
-            userEntry = userEntry / 2;
             list.push(binaryValue);
+            userEntry = userEntry / 2;
         }
     }
 

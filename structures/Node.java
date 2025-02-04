@@ -4,22 +4,9 @@
  * @param <T> o tipo de elemento armazenado no nó
  */
 public class Node<T> {
-
-    /**
-     * Referência para o próximo nó na estrutura de dados.
-     */
     private Node<T> next;
-
-    /**
-     * Elemento armazenado no nó.
-     */
     private T element;
-
-    /**
-     * Construtor que inicializa o nó com um elemento.
-     *
-     * @param element o elemento a ser armazenado no nó
-     */
+    
     public Node(T element) {
         this.next = null;
         this.element = element;

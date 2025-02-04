@@ -12,7 +12,7 @@ public class DinamicStack<T> {
     }
 
     public void push(T element) {
-        Node<T> newNode = new Node<>(element);
+        Node<T> newNode = new Node<T>(element);
         newNode.setNext(this.head);
         this.head = newNode;
     }
