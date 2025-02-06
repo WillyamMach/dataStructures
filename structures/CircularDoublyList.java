@@ -30,6 +30,28 @@ public class CircularDoublyList<T> {
         newNode.setNext(this.head);
     }
 
+    public void pop() {
+        if (isEmpty()) {
+            System.out.println("The list is empty.");
+            return;
+        }
+
+        if (this.head.getNext() == this.head) {
+            this.head = null;
+            return;
+        }
+
+        CircularNode<T> aux = this.head;
+
+        while (aux.getNext() != this.head) {
+            aux = aux.getNext();
+        }
+
+        aux.setNext(this.head.getNext());
+        this.head.getNext().setPrevious(aux);
+        this.head = this.head.getNext();
+    }
+
     public void displayInOrder() {
         if(isEmpty()) {
             System.out.println("Nothing to see here!");
