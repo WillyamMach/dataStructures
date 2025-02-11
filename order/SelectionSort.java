@@ -22,6 +22,7 @@ public class SelectionSort {
             }
         }
     }
+    
     public void displayArrayItems() {
         for(int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
